@@ -458,9 +458,15 @@ nav .active {
 #job-offers {
     padding-bottom: 3rem;
 
-    animation: bounceInUp; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 4s; /* don't forget to set a duration! */
+    
 }
+
+#job-offers div  {
+    animation: backInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s; /* don't forget to set a duration! */
+}
+
+
 
 
 #review {

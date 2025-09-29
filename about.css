@@ -234,7 +234,7 @@ nav .active {
 }
 
 .about-text {
-    width: 80%;
+    width: 100%;
     animation: bounceInRight; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 3s;
     overflow: hidden;
