@@ -1,0 +1,897 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+html {
+    
+    scroll-behavior: smooth;
+}
+
+
+.container-big {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.containerr {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: rgba(34, 34, 114, 0.944);
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.contact-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+
+.contact-head p a{
+    display: inline-flex;
+    gap: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+
+}
+
+.social-links ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-links li{
+    list-style-type: none;
+}
+header i{
+    font-size: 1.8rem;
+    color: white;
+    display: flex;
+
+}
+
+.help a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.nav-item span {
+    color: black;
+    font-size: 1rem;
+}
+
+
+.logo img {
+    width: 7rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo h1 {
+    font-size: 2rem;
+    font-family: "Quintessential", serif;
+}
+
+
+
+/* #nav {
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+} */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    z-index: 999;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 5rem;
+    background-color: rgba(255, 255, 255, 0.868);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    display: none;
+    
+    
+    
+}
+
+.nav-menu {
+    display: none;
+}
+
+nav .btn-a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    background-color: rgba(184, 36, 36, 0.844);
+
+}
+
+nav .btn-a:hover {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    background-color: black;
+    transition: 0.7s ease, transform 2.3s ease;
+
+}
+
+
+nav ul li a:hover{
+    padding: 1rem;
+    border-bottom: 1px solid black;
+    transition: 0.7s ease, transform 2.3s ease;
+    
+}
+
+nav .active {
+    padding: 1rem;
+    border-bottom: 1px solid black;
+}
+
+#showcase h2{
+    font-weight: 200;
+    font-size: 3.2rem;
+    padding-bottom: 1rem;
+    animation: bounceInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+    overflow: hidden;
+    
+}
+
+#showcase p {
+    font-weight: 400;
+    width: 60%;
+    font-size: 1.15rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1rem;
+    animation: bounceInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s; /* don't forget to set a duration! */
+    overflow: hidden;
+}
+
+#showcase a {
+    background-color: rgba(184, 36, 36, 0.844);
+    text-decoration: none;
+    color: white;
+    font-size: 1.15rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    display: inline-block;
+    animation: bounceInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s; /* don't forget to set a duration! */
+    overflow: hidden;
+
+}
+
+#showcase a:hover {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+
+}
+
+
+.a {
+    background-image: url('https://cdn.jns.org/uploads/2021/05/shutterstock_85696786-880x495.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    
+}
+
+.b {
+    background-image: url('https://cdn.pixabay.com/photo/2016/03/23/22/54/flag-1275831_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    
+}
+
+.c {
+    background-image: url('https://cdn.pixabay.com/photo/2017/08/29/19/47/international-2694650_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    
+}
+
+.d {
+    background-image: url('https://cdn.pixabay.com/photo/2014/05/13/15/42/poland-343466_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    
+}
+
+.e {
+    background-image: url('https://cdn.pixabay.com/photo/2023/04/11/09/08/norway-7916632_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    
+}
+
+.f {
+    background-image: url('https://cdn.pixabay.com/photo/2016/03/22/20/12/flag-1273682_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    
+}
+
+.g {
+    background-image: url('https://cdn.pixabay.com/photo/2018/03/09/02/39/flag-3210468_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    
+}
+
+.h {
+    background-image: url('https://cdn.pixabay.com/photo/2017/07/02/00/43/bundestag-2463236_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    
+}
+
+.i {
+    background-image: url('https://cdn.pixabay.com/photo/2016/03/22/20/12/flag-1273682_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    
+}
+
+.j {
+    background-image: url('https://cdn.pixabay.com/photo/2016/08/01/20/01/portugal-1561936_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    
+}
+
+.k {
+    background-image: url('https://cdn.pixabay.com/photo/2017/08/29/19/42/international-2694621_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    
+}
+
+.l {
+    background-image: url('https://cdn.pixabay.com/photo/2017/08/28/18/51/international-2690850_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    
+}
+
+.m {
+    background-image: url('https://cdn.pixabay.com/photo/2019/02/11/21/06/college-students-3990783_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    
+}
+
+.n {
+    background-image: url('https://cdn.pixabay.com/photo/2021/05/22/06/30/man-6272667_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    
+}
+
+
+.job-head{
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    
+}
+
+.job-head h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: rgba(34, 34, 114, 0.944);
+}
+
+#job-offers {
+    padding-bottom: 3rem;
+
+    animation: bounceInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 4s; /* don't forget to set a duration! */
+}
+
+
+#review {
+    background-image: url('https://cdn.pixabay.com/photo/2020/06/20/02/42/usa-5319479_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: brightness(50%); */
+    background-color: rgba(0, 0, 0, 0.75);
+    background-blend-mode: multiply;
+  
+}
+
+.reviews {
+    position: relative;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+
+
+.reviews p {
+
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.reviews h4{
+    padding-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 200;
+    font-style: italic;
+    color: white;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.five-stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;   
+    padding-bottom: 6rem;
+}
+
+.five-stars img{
+    width: 2rem;
+}
+
+#appointment {
+    background-color: rgba(250, 235, 215, 0.1138);
+    text-align: center;
+    margin-top: 10rem;
+    animation: fadeInOut 3.1s;
+    margin-bottom: 10rem;
+
+}
+
+.appointment:hover {
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out 0.9s;
+    box-shadow: 5px 5px 10px black;
+}
+
+.appointment {
+    background-image: url('https://cdn.pixabay.com/photo/2020/03/30/16/37/passport-4984783_1280.jpg');
+     background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: brightness(50%); */
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    padding: 5rem;
+    
+}
+
+.appointment h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#appointment form {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.form-group {
+    padding-bottom: 1rem;
+}
+
+.td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+#date {
+    width: 100%;
+}
+#time {
+    width: 100%;
+}
+.appointment select {
+    width: 100%;
+    padding: 1.5rem;
+    border: none;
+    outline: none;
+}
+
+.appointment button {
+    width: 100%;
+    color: white;
+    background-color: rgba(184, 36, 36, 0.844);
+    padding: 1rem;
+}
+
+.appointment button:hover {
+    color: white;
+    background-color: rgb(1, 1, 25);
+    transition: 0.5s ease 0.5s;
+
+    
+}
+
+#faq {
+    background-color: rgba(34, 34, 114, 0.944);
+    color: white;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#faq h3 {
+    font-size: 3rem;
+    font-weight: 200;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.accordion-body a {
+    font-size: 1rem;
+}
+
+#summary {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: rgba(0, 0, 0, 0.867);
+    /* padding-bottom: 3rem; */
+}
+
+.flex {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 3rem;
+    color: white;
+    font-family:'Courier New', Courier, monospace ;
+}
+
+.flex a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 1rem;
+}
+
+.flex span{
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 1rem;
+}
+
+.flex h5 {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.flex h4 {
+    color: white;
+}
+
+.bag a {
+    color: black;
+}
+
+.second li {
+    list-style-type: none;
+}
+
+.flex h6, .flex p {
+    font-size: 1rem;
+}
+
+.first h3 {
+    font-weight: 200;
+    font-size: 3rem;
+    display: flex;
+    gap: 2rem;
+}
+.first h3 img {
+    width: 3rem;
+}
+.first h4 {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.input {
+    display: flex;
+    
+}
+
+.input input {
+    padding: 1rem;
+    width: 85%;
+    border: none;
+    outline: none;
+
+}
+
+.input button {
+    border: none;
+    color: white;
+    background-color: black;
+    margin-left: -1rem;
+    cursor: pointer;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.address {
+    display: flex;
+}
+
+.address-text h6{
+    font-weight: 700;
+}
+
+footer {
+    padding-top: 3rem;
+    font-size: 0.8rem;
+    color: white;
+    text-align: center;
+    padding-bottom: 1rem;
+    background-color: rgba(184, 36, 36, 0.844);
+}
+
+footer span {
+    font-weight: 700;
+}
+
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 16px;
+    }
+     .nav-menu {
+        display: block;
+        cursor: pointer;
+        
+        
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    header {
+        display: none;
+
+    }
+
+    .about{
+        display: block;
+        width: 100%;
+    }
+
+    .about-text{
+        padding-top: 2rem;
+    }
+
+    .work-head {
+        width: 100%;
+    }
+
+    .work-head h3 {
+        font-size: 2rem;
+        padding-top: 1rem;
+        font-weight: 300;
+    }
+
+    .work-head p{
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    .works a{
+        padding: .5rem;
+    }
+
+    .form-group select {
+        font-size: 1rem;
+    }
+
+    .accordion-body {
+        font-size: 1rem;
+    }
+
+    .flex {
+        display: block;
+    }
+
+    .first {
+        padding: 1rem;
+    }
+
+    .second {
+        padding: 1rem;
+    }
+
+    .third {
+        padding: 1rem;
+    }
+
+    .fourth {
+        padding: 1rem;
+    }
+
+    
+}
+
+@media (max-width: 1000px){
+    html {
+        font-size: 14px;
+    }
+
+    .about {
+        text-align: center;
+        width: 100%;
+    }
+
+    .photo {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+   
+   .about-img {
+    display: block;
+    width: 100%;
+   }
+
+   .about-img span {
+    display: inline-block;
+    width: 100%;
+   }
+
+   .works {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   }
+} 
+
+@media (max-width: 700px){
+    html {
+        font-size: 12px;
+    }
+
+    .logo h1 {
+        display: none;
+    }
+
+    #showcase h2 {
+        font-size: 2.2rem;
+    }
+
+    .about-text h4 {
+        font-size: 2.2rem;
+    }
+
+    #school {
+        padding-top: 10rem;
+    }
+
+    #school h4 {
+        font-size: 2rem;
+    }
+
+    #school p{
+        font-size: 1.3rem;
+    }
+
+    .works {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+     #review h1{
+        font-size: 1.8rem;
+    }
+    #review h4{
+        font-size: 1.5rem;
+    }
+
+    .td {
+        display: block;
+    }
+    #appointment form {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer p, footer span{
+        font-size: 0.9rem;
+    }
+
+
+
+} 
