@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-size: 16px;
+    font-size: 6px;
     font-family: "Montserrat", sans-serif;
     
 }
@@ -903,6 +903,7 @@ footer span {
     footer p, footer span{
         font-size: 0.9rem;
     }
+
 
 
 
