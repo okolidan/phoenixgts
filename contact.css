@@ -118,7 +118,7 @@ nav ul li a {
 
 
 .logo h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: "Quintessential", serif;
 }
 
@@ -314,6 +314,52 @@ form div {
    
 }
 
+iframe {
+    width: 80%;
+    height: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    padding-bottom: 2rem;
+    
+}
+
+.anu {
+    opacity: 0;
+
+}
+
+.anu.animate{
+    animation: bounceInUp 1s forwards; /* referring directly to the animation's @keyframe declaration */
+   
+   opacity: 1;
+}
+
+
+.anl {
+    opacity: 0;
+
+}
+
+.anl.animate{
+    animation: bounceInLeft 1s forwards; /* referring directly to the animation's @keyframe declaration */
+   
+   opacity: 1;
+}
+
+.anr {
+    opacity: 0;
+
+}
+
+.anr.animate{
+    animation: bounceInRight 1s forwards; /* referring directly to the animation's @keyframe declaration */
+   
+   opacity: 1;
+}
+
 
 
 #faq {
@@ -351,7 +397,7 @@ form div {
     text-decoration: none;
     color: white;
     display: block;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .flex span{
@@ -363,7 +409,7 @@ form div {
 
 .flex h5 {
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
 }
 
@@ -380,17 +426,18 @@ form div {
 }
 
 .flex h6, .flex p {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .first h3 {
     font-weight: 200;
     font-size: 3rem;
     display: flex;
+    align-items: center;
     gap: 2rem;
 }
 .first h3 img {
-    width: 3rem;
+    width: 7rem;
 }
 .first h4 {
     font-size: 1rem;
@@ -462,6 +509,11 @@ footer span {
     header {
         display: none;
 
+    }
+
+    #showcase {
+        padding-top: 27rem;
+        padding-bottom: 27rem;
     }
 
      .contact-main {

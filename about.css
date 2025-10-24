@@ -113,7 +113,7 @@ nav ul li a {
 
 
 .logo h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: "Quintessential", serif;
 }
 
@@ -185,8 +185,8 @@ nav .active {
 }
 
 #showcase h2{
-    font-weight: 200;
-    font-size: 3.2rem;
+    font-weight: 300;
+    font-size: 4rem;
     padding-bottom: 1rem;
     animation: bounceInUp; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 2s; /* don't forget to set a duration! */
@@ -198,7 +198,7 @@ nav .active {
 
 
 #showcase {
-    background-image: url('about-2.jpg');
+    background-image: url('group-photo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -227,17 +227,12 @@ nav .active {
 
 .photo img{
     width: 80%;
-    animation: bounceInLeft; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 3s;
-    overflow: hidden;
 
 }
 
 .about-text {
     width: 100%;
-    animation: bounceInRight; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 3s;
-    overflow: hidden;
+
 }
 
 .about-text h3 {
@@ -313,6 +308,106 @@ nav .active {
     text-align: center;
 }
 
+.team-head {
+    text-align: center;
+}
+
+.team-head h2 {
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding-top: 3rem;
+}
+
+.team-head h3 {
+    font-weight: 200;
+    font-size: 3rem;
+}
+
+.teams {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5rem;
+    
+}
+
+.team-card {
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-radius: 3rem;
+    
+}
+
+.team-card:hover {
+    background-color: black;
+    color: white;
+    fill: white;
+    transform: scale(1.05);
+    transition: 0.7s ease-in-out 0.2s;    
+    box-shadow: 0px 0px 20px black;
+    
+    
+}
+
+.socials svg {
+    width: 2rem;
+}
+
+.socials a{
+    text-decoration: none;
+}
+
+
+
+.team-card img{
+    width: 25rem;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+}
+
+.team-card h5 {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.team-card .socials {
+    padding-bottom: 1rem;
+}
+
+
+.anu {
+    opacity: 0;
+
+}
+
+.anu.animate{
+    animation: bounceInUp 1s forwards; /* referring directly to the animation's @keyframe declaration */
+   
+   opacity: 1;
+}
+.anl {
+    opacity: 0;
+
+}
+
+.anl.animate{
+    animation: bounceInLeft 1s forwards; /* referring directly to the animation's @keyframe declaration */
+   
+   opacity: 1;
+}
+.anr {
+    opacity: 0;
+
+}
+
+.anr.animate{
+    animation: bounceInRight 1s forwards; /* referring directly to the animation's @keyframe declaration */
+   
+   opacity: 1;
+}
 #faq {
     background-color: rgba(34, 34, 114, 0.944);
     color: white;
@@ -348,19 +443,19 @@ nav .active {
     text-decoration: none;
     color: white;
     display: block;
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 .flex span{
     text-decoration: none;
     color: white;
     display: block;
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 .flex h5 {
     color: white;
-    font-size: 1.2rem;
+    font-size: .8rem;
     font-weight: 700;
 }
 
@@ -377,20 +472,20 @@ nav .active {
 }
 
 .flex h6, .flex p {
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 .first h3 {
     font-weight: 200;
     font-size: 3rem;
     display: flex;
-    gap: 2rem;
+    align-items: center;
 }
 .first h3 img {
-    width: 3rem;
+    width: 7rem;
 }
 .first h4 {
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: 300;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -480,6 +575,38 @@ footer span {
         width: 100%;
     }
 
+        .team-head {
+        width: 100%;
+    }
+
+    .team-head h3 {
+        font-size: 2rem;
+        padding-top: 1rem;
+        font-weight: 300;
+    }
+
+    .team-head p{
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    .teams {
+        display: grid;
+        grid-template-columns: 1fr;
+        
+   }
+
+    .teams a{
+        padding: .5rem;
+    }
+
+    .team-card {
+        width: 25rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
      .contact-main {
         display: block;
         gap: 3rem;
@@ -550,6 +677,11 @@ footer span {
         width: 100%;
     }
 
+    #showcase {
+        padding-top: 25rem;
+        padding-bottom: 30rem;
+    }
+
     .photo {
         width: 100%;
         margin-left: auto;
@@ -582,7 +714,7 @@ footer span {
     }
 
     #showcase h2 {
-        font-size: 2.2rem;
+        font-size: 3.3rem;
     }
 
     .about-text h4 {

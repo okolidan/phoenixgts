@@ -681,10 +681,11 @@ nav .active {
     font-weight: 200;
     font-size: 3rem;
     display: flex;
+    align-items: center;
     gap: 2rem;
 }
 .first h3 img {
-    width: 3rem;
+    width: 7rem;
 }
 .first h4 {
     font-size: 1rem;

@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-size: 6px;
+    font-size: 16px;
     font-family: "Montserrat", sans-serif;
     
 }
@@ -51,7 +51,7 @@ header {
     display: inline-flex;
     gap: 1rem;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-decoration: none;
 
 }
@@ -119,7 +119,7 @@ nav ul li a {
 
 
 .logo h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: "Quintessential", serif;
 }
 
@@ -159,7 +159,7 @@ nav ul li a {
 nav .btn-a {
     color: white;
     text-decoration: none;
-    padding: 1rem;
+    padding: .8rem;
     background-color: rgba(184, 36, 36, 0.844);
 
 }
@@ -272,7 +272,19 @@ nav .active {
     border-radius: 1rem;
     text-align: center;
 }
-
+.d {
+    background-image: url('https://cdn.pixabay.com/photo/2024/12/27/21/57/venice-9294935_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+}
 #about{
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -286,16 +298,25 @@ nav .active {
 
 .photo img{
     width: 80%;
-    animation: bounceInLeft; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 3s;
-    overflow: hidden;
+    opacity: 0;   
 
+}
+
+.photo img.animate {
+    animation: bounceInLeft 1s forwards; /* referring directly to the animation's @keyframe declaration */
+    opacity: 1;
+    overflow: hidden;
 }
 
 .about-text {
     width: 100%;
-    animation: bounceInRight; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 3s;
+    opacity: 0;    
+    
+}
+
+.about-text.animate {
+    animation: bounceInRight 1s forwards;
+    opacity: 1;
     overflow: hidden;
 }
 
@@ -350,10 +371,15 @@ nav .active {
 
 }
 
-.school {
-    animation: bounceInUp; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 3s; /* don't forget to set a duration! */
+.anu {
+    opacity: 0;
 
+}
+
+.anu.animate{
+    animation: bounceInUp 1s forwards; /* referring directly to the animation's @keyframe declaration */
+   
+   opacity: 1;
 }
 
 
@@ -377,11 +403,12 @@ nav .active {
     
 }
 
-#school a {
+.school a {
     text-decoration: none;
     color: white;
     background-color: rgba(184, 36, 36, 0.844);
-    padding: 1.5rem;
+    padding: 1rem;
+    display: inline-block;
     border-radius: 2rem;
 }
 
@@ -400,10 +427,14 @@ nav .active {
     margin-right: auto;
     text-align: center;
     padding-top: 5rem;
-    animation: bounceInUp; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 3s; /* don't forget to set a duration! */
-    overflow: hidden;
+    opacity: 0;
 
+}
+
+.work-head.animate {
+    animation: bounceInUp 1s forwards; /* referring directly to the animation's @keyframe declaration */
+    overflow: hidden;
+    opacity: 1;
 }
 
 .work-head h2 {
@@ -426,11 +457,11 @@ nav .active {
     justify-content: space-between;
     align-items: center;
     gap: 3rem;
-    width: 100%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 4rem;
-    animation: zoomInUp; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 3s; /* don't forget to set a duration! */
-    overflow: hidden;
+    
 
     
 }
@@ -438,15 +469,25 @@ nav .active {
 .work-card {
     border: 1px solid rgba(67, 67, 67, 0.304);
     text-align: center;   
+    opacity: 0;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
 
 }
 
+.work-card.animate{
+    animation: rollIn 2s forwards; /* referring directly to the animation's @keyframe declaration */
+    overflow: hidden;
+    opacity: 1;
+}
+
 .work-card:hover {
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.9);
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.9);
     background-color: rgba(33, 33, 245, 0.844);
     color: white;
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: 0.7s ease-in .5s;
+
 
 }
 
@@ -458,19 +499,33 @@ nav .active {
 .works h5 {
     padding-top: 1rem;
     padding-bottom: 1rem;
+    font-weight: 700;
+
 }
 
 
 .works a {
     color: white;
     background-color: rgba(184, 36, 36, 0.844);
-    padding: 1rem;
+    padding: .4rem;
     display: inline-block;
     margin-bottom: 1rem;
     border: none;
     border-radius: 1rem;
     text-decoration: none;
     
+}
+
+.more {
+    display: inline-block;
+    color: white;
+    background-color: rgba(184, 36, 36, 0.844);
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 3rem;
+    padding: 1rem;
+    text-decoration: none;
+    margin-left: 10rem;
 }
 
 .works a:hover {
@@ -534,7 +589,6 @@ nav .active {
     background-color: rgba(250, 235, 215, 0.1138);
     text-align: center;
     margin-top: 10rem;
-    animation: fadeInOut 3.1s;
     margin-bottom: 10rem;
 
 }
@@ -617,6 +671,26 @@ nav .active {
     padding-bottom: 5rem;
 }
 
+.faq-head {
+    opacity: 0;
+}
+
+.faq-head.animate{
+    opacity: 1;
+    animation: fadeInUp 1s forwards; /* referring directly to the animation's @keyframe declaration */
+    overflow: hidden;
+}
+
+.accordion {
+    opacity: 0;
+}
+
+.accordion.animate{
+    opacity: 1;
+    animation: fadeInUp 1s forwards; /* referring directly to the animation's @keyframe declaration */
+    overflow: hidden;
+}
+
 #faq h3 {
     font-size: 3rem;
     font-weight: 200;
@@ -630,6 +704,7 @@ nav .active {
     background-color: rgba(0, 0, 0, 0.867);
     /* padding-bottom: 3rem; */
 }
+
 
 .flex {
     display: grid;
@@ -681,10 +756,11 @@ nav .active {
     font-weight: 200;
     font-size: 3rem;
     display: flex;
+    align-items: center;
     gap: 2rem;
 }
 .first h3 img {
-    width: 3rem;
+    width: 7rem;
 }
 .first h4 {
     font-size: 1rem;
@@ -783,6 +859,11 @@ footer span {
         padding-top: 1rem;
     }
 
+    .works {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+   }
+
     .works a{
         padding: .5rem;
     }
@@ -844,10 +925,7 @@ footer span {
     width: 100%;
    }
 
-   .works {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-   }
+
 } 
 
 @media (max-width: 700px){
@@ -903,7 +981,6 @@ footer span {
     footer p, footer span{
         font-size: 0.9rem;
     }
-
 
 
 

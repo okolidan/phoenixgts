@@ -441,6 +441,21 @@ nav .active {
     
 }
 
+.o {
+    background-image: url('https://cdn.pixabay.com/photo/2025/08/04/21/21/travel-9755525_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    
+}
+
 
 .job-head{
     text-align: center;
@@ -676,10 +691,11 @@ nav .active {
     font-weight: 200;
     font-size: 3rem;
     display: flex;
+    align-items: center;
     gap: 2rem;
 }
 .first h3 img {
-    width: 3rem;
+    width: 7rem;
 }
 .first h4 {
     font-size: 1rem;
